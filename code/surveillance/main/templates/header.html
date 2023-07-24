@@ -1,0 +1,135 @@
+{% block header %}
+
+<head>
+    <title>KAsimov - Surveillance Site</title>
+</head>
+
+<!-- Navigator -->
+<nav>
+    <div class="frame" id="n37_174">
+        <!-- Rectangle 1 -->
+        <div class="left top rectangle" id="n37_175">
+            <!-- 스크린샷 2021-12-29 오전 6.50 1 -->
+            <div class="left center rectangle" id="n37_177"></div>
+            <!-- KAsimov -->
+            <a href = "https://kasimov.korea.ac.kr/" ><div class="left center text" id="n37_178">KAsimov</div></a>
+            <!-- 로그인 -->
+            <a href = "{% url 'login' %}" id = "for_a"></a><div class="right top text" id="n37_179">로그인</div></a>
+            <!-- 모바일 -->
+            <a href = "#" id = "for_a"></a><div class="right top text" id="n37_180">모바일</div></a>
+            <!-- 메인화면 -->
+            <a href = "#" id = "for_a"></a><div class="right top text" id="n37_181">메인화면</div></a>
+        </div>
+    </div>
+</nav>
+
+<style>
+/* Navigator */
+#n37_174 {
+    width: 100%;
+    height: 68px;
+
+}
+
+    /* Rectangle 1 */
+    #n37_175 {
+        position : fixed;
+        background: rgb(5, 5,5,0.4);
+        width: 100%;
+        height: 68px;
+        overflow: hidden;
+    }
+
+
+        /* 스크린샷 2021-12-29 오전 6.50 1 */
+        #n37_177 {
+            position: relative;
+            background-image: url("https://s3-alpha-sig.figma.com/img/503a/3921/f82637ef25015a01fa188a5490a8a50e?Expires=1690761600&Signature=ezCy9CwkIzl-9SrYM4qdCBxpj1fiUcGGhvC~ufRPwu8ok9gcySawbhNyaLZY6PVXSHe1eNHzZJio9tqmf6QPn5sglD2DPrXPH84n9LkDR0IYPvcIwxyXrybmw4DA5NC5uOQx33QHnxcurZr8OZsgar21pirXWLMJEDfAQU0EZMEkMNVZQ5afWb42Jh93G66hKYTGGgbfcWSBrRb8bMhCDO1s2GNzAaq~z5HzGGQ5n9Z8EoM~bKNPhO4t9IOnxQaX-I-su~7B38RTrhqKcfWqmoKH8jx7-mhKaDsGM3e2UMz0ctl6eXsQvXj2PWflTCY9x--NseuAnjSYBsqVe--PIw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            left: 27px;
+            width: 46px;
+            top: calc(50% - 23px + 0px);
+            height: 46px;
+        }
+
+        /* KAsimov */
+        #n37_178 {
+            position: absolute;
+            font-family: Roboto;
+            font-size: 30px;
+            font-weight: 600;
+            letter-spacing: 0px;
+            color: rgb(255, 255, 255);
+            vertical-align: middle;
+            justify-content: flex-start;
+            width: 156px;
+            align-items: center;
+            line-height: 35.1562px;
+            height: 40px;
+            left: 88px;
+            top: calc(50% - 20px + 0px);
+        }
+
+    /* 로그인 */
+    #n37_179 {
+        position: absolute;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 0px;
+        color: rgb(255, 255, 255);
+        vertical-align: middle;
+        justify-content: flex-start;
+        width: 55px;
+        align-items: center;
+        line-height: 21.0938px;
+        height: 21px;
+        right: 74px;
+        top: 24px;
+    }
+
+    /* 모바일 */
+    #n37_180 {
+        position: absolute;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 0px;
+        color: rgb(255, 255, 255);
+        vertical-align: middle;
+        justify-content: flex-start;
+        width: 55px;
+        align-items: center;
+        line-height: 21.0938px;
+        height: 21px;
+        right: 187px;
+        top: 24px;
+    }
+
+    /* 메인화면 */
+    #n37_181 {
+        position: absolute;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 0px;
+        color: rgb(255, 255, 255);
+        vertical-align: middle;
+        justify-content: flex-start;
+        width: 75px;
+        align-items: center;
+        line-height: 21.0938px;
+        height: 21px;
+        right: 298px;
+        top: 24px;
+    }
+
+    #for_a {
+        text-decoration: none;
+    }
+
+</style>
+
+{% endblock header %}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<!-- Login -->
+<div class="frame" id="n4_96">
+
+    {% block header %} {% include 'header.html' %} {% endblock header %}
+    <div id="frame_main">
+        <!-- Surveillance Camera Control Site -->
+        <div class="center text" id="n4_97">Surveillance Camera Control Site</div>
+        <!-- KAsimov -->
+        <div class="center text" id="n4_98">KAsimov</div>
+        <div id = "a_group">
+            <!-- Login -->
+            <div class="right top text" id="n27_14">Login</div>
+            <!-- Password -->
+            <div class="group" id="n27_22">
+                <!-- Rectangle 3 -->
+                <input class="left top rectangle" id="n27_13" type="text" class="form-control" name="password"
+                value="{{ form.password.value|default_if_none:'' }}" placeholder="PASSWORD">
+            </div>
+            <!-- Password -->
+            <div class="group" id="n27_75">
+                <!-- Rectangle 3 -->
+                <button class="left top rectangle" id="n27_76">
+                    <!-- 로그인 -->
+                    <div class="left top text" id="n27_77">로그인</div>
+                </button>    
+            </div>
+            <!-- ID -->
+            <div class="group" id="n27_20">
+                <!-- Rectangle 2 -->
+                <input class="left top rectangle" id="n27_12" type="text" class="form-control" name="username"
+                value="{{ form.username.value|default_if_none:'' }}" placeholder="ID">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ———————      CSS      ——————— -->
+<style>
+
+    /* Login */
+    #n4_96 {
+        width: 150%;
+        height: 100%;
+        overflow: hidden;
+        background: linear-gradient(146deg, #E73F3F 0%, #000 94.27%);
+    }
+
+    #frame_main {
+        width: 100%;
+        height: 1024px;
+        
+    }
+    
+        /* Surveillance Camera Control Site */
+        #n4_97 {
+            position: absolute;
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 0px;
+            color: rgb(255, 255, 255);
+            vertical-align: middle;
+            justify-content: flex-start;
+            width: 255px;
+            transform: translate(0px, 0px);
+            line-height: 18.75px;
+            height: 27px;
+            left: calc(50% - 121.5px + -285.5px);
+            top: 563px;
+        }
+    
+        /* KAsimov */
+        #n4_98 {
+            position: absolute;
+            font-family: Roboto;
+            font-size: 96px;
+            font-weight: 600;
+            letter-spacing: 0px;
+            color: rgb(255, 255, 255);
+            vertical-align: middle;
+            justify-content: flex-start;
+            width: 448px;
+            transform: translate(0px, 0px);
+            line-height: 112.5px;
+            height: 102px;
+            left: calc(50% - 224px + -322px);
+            top: 461px;
+        }
+    
+
+
+        /* Login */
+        #n27_14 {
+            position: absolute;
+            font-family: Roboto;
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 0px;
+            color: rgb(255, 255, 255);
+            vertical-align: middle;
+            justify-content: flex-start;
+            width: 60px;
+            align-items: center;
+            line-height: 28.125px;
+            height: 28px;
+            left: calc(50% + 70px);
+            top: 371px;
+        }
+    
+    
+            /* Rectangle 3 */
+            #n27_13 {
+                position: absolute;
+                background: rgb(255, 255, 255);
+                border-radius: 7px;
+                left: calc(50% + 70px);
+                width: 419px;
+                top: 486px;
+                height: 51px;
+                font-family: Roboto;
+                font-size: 24px;
+                font-weight: 600;
+                letter-spacing: 0px;
+                color: rgb(199, 199, 199);
+            }
+
+            /* Rectangle 3 */
+            #n27_76 {
+                position: absolute;
+                background: rgb(206, 51, 51);
+                border-radius: 7px;
+                left: calc(50% + 70px);
+                width: 419px;
+                top: 581px;
+                height: 51px;
+            }
+    
+            /* 로그인 */
+            #n27_77 {
+                position: relative;
+                font-family: Roboto;
+                font-size: 24px;
+                font-weight: 600;
+                letter-spacing: 0px;
+                color: rgb(255, 255, 255);
+                vertical-align: middle;
+                justify-content: flex-start;
+                width: 75px;
+                align-items: center;
+                line-height: 28.125px;
+                height: 28px;
+                left: calc(50% - 35px);
+                top: calc(50% - 28px);
+            }
+    
+    
+            /* Rectangle 2 */
+            #n27_12 {
+                position: absolute;
+                background: rgb(255, 255, 255);
+                border-radius: 7px;
+                left: calc(50% + 70px);
+                width: 419px;
+                top: 417px;
+                height: 51px;
+                font-family: Roboto;
+                font-size: 24px;
+                font-weight: 600;
+                letter-spacing: 0px;
+                color: rgb(199, 199, 199);
+            }
+</style>
+
+<!-- Footer -->
+{% block footer %} {% include 'footer.html' %} {% endblock footer %}
+
+</body>
+</html>
