@@ -14,11 +14,11 @@
             <!-- KAsimov -->
             <a href = "https://kasimov.korea.ac.kr/" ><div class="left center text" id="n37_178">KAsimov</div></a>
             <!-- 로그인 -->
-            <a href = "{% url 'login' %}" id = "for_a"></a><div class="right top text" id="n37_179">로그인</div></a>
+            <a href = "/login" id = "for_a"><div class="right top text" id="n37_179">로그인</div></a>
             <!-- 모바일 -->
-            <a href = "#" id = "for_a"></a><div class="right top text" id="n37_180">모바일</div></a>
+            <a href = "/dev" id = "for_a"><div class="right top text" id="n37_180">모바일</div></a>
             <!-- 메인화면 -->
-            <a href = "#" id = "for_a"></a><div class="right top text" id="n37_181">메인화면</div></a>
+            <a href = "/" id = "for_a"><div class="right top text" id="n37_181">메인화면</div></a>
         </div>
     </div>
 </nav>
@@ -28,6 +28,7 @@
 #n37_174 {
     width: 100%;
     height: 68px;
+    z-index: 1;
 
 }
 
@@ -38,6 +39,8 @@
         width: 100%;
         height: 68px;
         overflow: hidden;
+        z-index: 1;
+
     }
 
 
